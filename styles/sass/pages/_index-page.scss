@@ -1,0 +1,174 @@
+.index-page {
+
+   header {
+      background-image: url(../sanctuary-helpers/assets/header-home.jpg);
+      img {
+         width: 55%;
+      }
+
+      h1 {
+         margin-left: 100px;
+         width: 100px;
+      }
+   }
+
+   img {
+      max-width: 100%;
+      display: block;
+   }
+
+   // first section
+   .discover-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 100px 0 60px;
+
+      div:first-child {
+         width: 58%;
+
+         h2 {
+            margin: 0;
+            padding-bottom: 20px;
+         }
+      }
+      img {
+         width: 80%;
+         box-shadow: -15px 15px 0 $yellow;
+      }
+
+      button {
+         margin-top: 20px;
+      }
+   }
+
+   // second section
+   section:nth-of-type(2) {
+      background-color: $ice;
+      padding: 60px 0;
+
+      .gallery {
+         display: flex;
+         justify-content: space-between;
+
+         img {
+            width: calc(100% / 3 - 20px);
+         }  
+      }
+   }
+
+   // third section
+   .about {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 40px 0 100px;
+
+      > div {
+         position: relative;
+      }
+      
+      div {
+         padding-left: 40px;
+         flex: 1 0 400px;
+      }
+
+      div:nth-child(2), div:nth-child(4) {
+         padding-left: 60px;
+      }
+
+      .fas {
+         position: absolute;
+         font-size: 1.7rem;
+         top: 10px;
+         left: -10px;
+         border-radius: 50%;
+         background-color: $yellow;
+         padding: 10px;
+      }
+
+      .fa-users, .fa-phone {
+         left: 10px;
+      }
+   }
+
+   // fourth section
+   section:nth-of-type(4) {
+      background-color: $ice;
+      padding: 80px 0 20px;
+
+      .locations > div {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: no-wrap;
+         height: 50%;
+         max-height: 300px;
+
+         .location-img {
+            width: 50%;
+            max-width: 540px;
+            position: relative;
+         }
+
+         .img1 {
+            right: 150px;
+            bottom: 120px;
+            box-shadow: 15px 15px 0 $yellow;
+         }
+
+         .img2 {
+            // left: 150px;
+            left: 11.4%;
+            bottom: -35px;
+            box-shadow: -15px 15px 0 $yellow;
+         }
+
+         .location-text {
+            width: 35%;
+            max-width: 550px;
+            margin-bottom: 100px;
+         }
+
+         .text1 {
+            padding-bottom: 40px;
+         }
+
+         .text2 {
+            text-align: right;
+         }
+         
+         button {
+            margin-top: 20px;
+         }
+      }
+   }
+
+   // fifth section
+   .landscape-photo {
+      background-image: url(../sanctuary-helpers/assets/banner-image.jpg);
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+
+   .search {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 0;
+      width: 70%;
+
+      p {
+         text-align: left;
+         margin: 0 auto 10px;
+      }
+
+      button {
+         width: 180px;
+         margin: 0 auto;
+      }
+   }
+
+}

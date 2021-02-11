@@ -1,0 +1,98 @@
+@import "setup";
+@import "variables";
+@import "navigation";
+
+// pages
+@import "./pages/index-page";
+@import "./pages/blog-page";
+@import "./pages/contact-page";
+@import "./pages/media-queries";
+
+// General styles
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: $black;
+    background-color: $white;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 6rem;
+    line-height: 6.4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h2, h3, .logo, button {
+    font-family: 'Kumar One', cursive;
+    text-transform: uppercase;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    padding-top: 20px;
+    width: 20%;
+}
+
+header {
+    height: 90vh;
+    min-height: 750px;
+    max-height: 800px;
+    max-width: 100%;
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.hamburger {
+    display: none;
+}
+
+button {
+    background-color: $green;
+    color: $white;
+    padding: 9px 7px 5px;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    border: 3px solid $green;
+    transition: 0.5s;
+    
+    &:hover {
+        color: $green;
+        border: 3px solid $green;
+        background-color: $white;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    height: 35px;
+    padding-top: 4px;
+    margin: 0;
+}
+
