@@ -17,6 +17,19 @@
         background-color: $ice;
     }
 
+    // these two classes are for javascript addition only
+
+    .sticky {
+        position: fixed;
+        top: 0;
+    }
+
+    .sticky + .blog-page {
+        padding-top: 40px;
+    }
+
+    // ^^ //
+
     aside {
         position: absolute;
         right: 0;

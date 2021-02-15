@@ -517,6 +517,15 @@ nav a:hover {
   background-color: #e0fddf;
 }
 
+.blog-page .sticky {
+  position: fixed;
+  top: 0;
+}
+
+.blog-page .sticky + .blog-page {
+  padding-top: 40px;
+}
+
 .blog-page aside {
   position: absolute;
   right: 0;
