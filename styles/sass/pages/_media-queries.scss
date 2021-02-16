@@ -273,6 +273,7 @@
          }
       }
 
+
       aside {
          position: static;
          width: 70%;
@@ -321,7 +322,17 @@
          }
       }
 
+      .sticky {
+         position: absolute;
+         top: 0;
+      }
+
+      .sticky + .blog-page {
+         padding-top: 0;
+      }
+
       aside {
+         display: none;
          flex-direction: column;
          text-align: center;
          align-items: center;

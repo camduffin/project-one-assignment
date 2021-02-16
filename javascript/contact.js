@@ -1,10 +1,8 @@
 // contact page JS only
 const contactPage = document.querySelector('.contact-page');
 
-// // CONTACT PAGE COMMENT ALERT
-
+// FORM HANDLING
 const formElement = contactPage.querySelector('form');
-// console.log(formElement);
 
 formElement.addEventListener('submit', function(e){
     e.preventDefault();
@@ -20,9 +18,7 @@ formElement.addEventListener('submit', function(e){
 
     const commentInput = contactPage.querySelector('textarea');commentInput.value = '';
 
-    
-
-})
+});
 
 // reset input values if page is refreshed
 contactPage.querySelector('form').reset();

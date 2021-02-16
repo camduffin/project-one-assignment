@@ -2,10 +2,7 @@
 const blogPage = document.querySelector('.blog-page');
 
 
-
-
-// BLOG PAGE STICKY ASIDE
-
+// STICKY ASIDE
 const stickyNav = blogPage.querySelector('aside');
 
 // when the user scrolls the blog page, run this sticky function
@@ -29,6 +26,31 @@ function stickyFunction() {
 // the link below really helped me figure out the sticky aside
 
 // https://www.w3schools.com/jsref/prop_element_offsettop.asp
+
+
+// FORM HANDLING
+
+const formElement = blogPage.querySelector('form');
+
+formElement.addEventListener('submit', function(e){
+    e.preventDefault(e);
+
+    // clear all input fields once submitted
+    const nameInput = blogPage.querySelector('input[type="text"]');
+    nameInput.value = '';
+
+    const emailInput = blogPage.querySelector('input[type="email"]');
+    
+    emailInput.value = '';
+
+    const commentInput = blogPage.querySelector('textarea');
+    
+    commentInput.value = '';
+
+});
+
+// reset input values if page is refreshed
+blogPage.querySelector('form').reset();
 
 
 

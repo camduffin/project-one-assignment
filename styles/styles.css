@@ -1102,7 +1102,15 @@ nav a:hover {
   .blog-page header nav ul {
     display: none;
   }
+  .blog-page .sticky {
+    position: absolute;
+    top: 0;
+  }
+  .blog-page .sticky + .blog-page {
+    padding-top: 0;
+  }
   .blog-page aside {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
